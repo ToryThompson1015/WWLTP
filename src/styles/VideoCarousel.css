@@ -6,7 +6,7 @@
 
 .carousel-title {
     font-size: 24px;
-    color: #ffdd57; /* ESPN-like gold */
+    color: #ffdd57;
     margin-bottom: 20px;
 }
 
@@ -25,33 +25,46 @@
 
 /* Each item in the carousel */
 .carousel-item {
-    flex: 0 0 auto; /* Prevent items from shrinking */
-    width: 200px; /* Width of each video card */
+    flex: 0 0 auto;
+    width: 200px; /* Consistent width for each video card */
     text-align: center;
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't add to width */
+    background-color: #2a2a2a;
+    border-radius: 10px; 
+    border: 1px solid white;
 }
 
-.video-thumbnail {
+
+
+/* Video thumbnail and iframe should fill the card */
+.video-thumbnail, .iframe-container iframe {
+    width: 100%; 
+    height: 150px; /* Fixed height for consistency */
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+/* Make sure iframe is sized properly */
+.iframe-container {
     width: 100%;
-    border-radius: 10px;
+    height: 150px;
+    margin-bottom: 10px; 
+   
 }
 
+
+/* Title and views display below the video */
 .video-title {
-    margin: 10px 0;
+    margin-top: 10px;  /* Space between video and title */
     font-size: 16px;
+    font-weight: bold;
     color: white;
 }
 
 .video-views {
+    margin-top: 5px;  /* Space between title and views */
     font-size: 14px;
     color: #ccc;
-}
-
-/* Optional: Add some styling for scrollbar */
-.carousel-wrapper::-webkit-scrollbar {
-    height: 8px;
-}
-
-.carousel-wrapper::-webkit-scrollbar-thumb {
-    background-color: #ffdd57; /* Custom scrollbar color */
-    border-radius: 10px;
 }

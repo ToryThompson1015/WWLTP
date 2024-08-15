@@ -14,7 +14,7 @@ body, html {
 
 /* Parallax section */
 .parallax-section {
-    background-image: url('https://plus.unsplash.com/premium_photo-1722584996622-46f592165128?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8'); /* Replace with your image */
+    background-image: url('https://img.freepik.com/free-vector/futuristic-black-yellow-gaming-background_331749-887.jpg?t=st=1723737601~exp=1723741201~hmac=a59038877bac5bfd5af6f8dbf8dd4477eafa70097c67a941dc9ec8fb3d60bd38&w=996'); /* Replace with your image */
     height: 500px; /* Adjust height as needed */
     background-attachment: fixed;
     background-position: center;

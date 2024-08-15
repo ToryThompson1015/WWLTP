@@ -1,12 +1,13 @@
 import React from 'react';
+import Slideshow from './Slideshow';  // Import the Slideshow component
 import '../styles/ParallaxSection.css';
 
-const ParallaxSection = ({ title, description, backgroundImage }) => {
+const ParallaxSection = ({ title, description, images }) => {
     return (
-        <section
-            className="parallax-section"
-            style={{ backgroundImage: `url(${backgroundImage})` }}
-        >
+        <section className="parallax-section">
+            {/* Slideshow integrated here */}
+            <Slideshow images={images} interval={5000} />
+
             <div className="content">
                 <h2>{title}</h2>
                 <p>{description}</p>
