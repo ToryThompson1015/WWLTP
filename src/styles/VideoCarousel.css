@@ -1,0 +1,57 @@
+.video-carousel {
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.carousel-title {
+    font-size: 24px;
+    color: #ffdd57; /* ESPN-like gold */
+    margin-bottom: 20px;
+}
+
+/* Wrapper for the entire carousel */
+.carousel-wrapper {
+    overflow-x: auto; /* Horizontal scroll */
+    white-space: nowrap;
+    padding-bottom: 10px;
+}
+
+/* The container for all video items */
+.carousel {
+    display: flex;
+    gap: 20px; /* Spacing between video items */
+}
+
+/* Each item in the carousel */
+.carousel-item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    width: 200px; /* Width of each video card */
+    text-align: center;
+}
+
+.video-thumbnail {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-title {
+    margin: 10px 0;
+    font-size: 16px;
+    color: white;
+}
+
+.video-views {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Optional: Add some styling for scrollbar */
+.carousel-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.carousel-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ffdd57; /* Custom scrollbar color */
+    border-radius: 10px;
+}

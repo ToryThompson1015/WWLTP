@@ -1,0 +1,18 @@
+.parallax-section {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-section .content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}

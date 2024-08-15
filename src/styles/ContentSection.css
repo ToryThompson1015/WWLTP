@@ -1,0 +1,10 @@
+.content-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.content-section .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
