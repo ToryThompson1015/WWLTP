@@ -2,8 +2,10 @@
     position: relative;
     width: 100%;
     height: 400px; /* Adjust height as needed */
-    overflow: hidden;
+    overflow: hidden; /* Ensure nothing overflows out of the container */
     border-radius: 10px; /* Slightly rounded corners */
+    padding: 0; /* Ensure no padding inside the container */
+    margin: 0; /* Ensure no extra margins */
 }
 
 .slide {
@@ -12,38 +14,15 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* Ensure image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    padding: 0; /* No padding around images */
+    margin: 0; /* No margin to avoid white spaces */
 }
 
 .slide.active {
     opacity: 1;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
-    z-index: 10;
-    border-radius: 50%;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
 }

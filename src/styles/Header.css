@@ -1,77 +1,72 @@
-/* Main header styling */
-.main-header {
+/* Styles for the main and secondary headers */
+.main-header, .secondary-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
-    background-color: #1e1e1e; /* Dark background */
+    background-color: #333;
     color: white;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    padding: 10px;
 }
 
-/* Logo area */
 .header-logo h1 {
     font-size: 24px;
-    font-weight: bold;
-    color: #ffdd57; /* ESPN Gold */
+    margin: 0;
 }
 
-/* Main navigation links */
-.header-nav a {
-    margin: 0 15px;
-    text-decoration: none;
+.header-nav a, .secondary-nav a {
     color: white;
+    margin-right: 20px;
+    text-decoration: none;
     font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s;
 }
 
-.header-nav a:hover {
-    color: #ffdd57; /* Hover gold effect */
-}
-
-/* Header actions like login button */
 .header-actions .login-btn {
-    background-color: #ffdd57;
-    color: black;
-    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
     border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
 .header-actions .login-btn:hover {
-    background-color: #e6c847; /* Slightly darker on hover */
+    background-color: #45a049;
 }
 
-/* Secondary navigation bar */
-.secondary-header {
-    background-color: #333; /* Slightly lighter background */
-    padding: 10px 50px;
-    border-top: 1px solid #444; /* Divider between two navs */
-}
-
-/* Secondary navigation links */
-.secondary-nav {
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-.secondary-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    padding: 8px;
-    transition: color 0.3s, background-color 0.3s;
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    position: relative;
 }
 
-.secondary-nav a:hover {
-    color: #ffdd57;
-    background-color: #444;
-    border-radius: 5px;
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-button:hover {
+    color: #ff0000;
 }

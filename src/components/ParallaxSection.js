@@ -1,16 +1,27 @@
 import React from 'react';
-import Slideshow from './Slideshow';  // Import the Slideshow component
 import '../styles/ParallaxSection.css';
 
-const ParallaxSection = ({ title, description, images }) => {
-    return (
-        <section className="parallax-section">
-            {/* Slideshow integrated here */}
-            <Slideshow images={images} interval={5000} />
+const ParallaxSection = ({ title, description, backgroundImage }) => {
+    // Add your list of trending games here
+    const trendingGames = ['League of Legends', 'Valorant', 'CS:GO', 'Fortnite'];
 
+    return (
+        <section
+            className="parallax-section"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+        >
             <div className="content">
                 <h2>{title}</h2>
-                <p>{description}</p>
+                {description && <p>{description}</p>}
+
+                {/* Trending Games Section */}
+                <div className="trending-games">
+                    {trendingGames.map((game, index) => (
+                        <div className="game-card" key={index}>
+                            {game}
+                        </div>
+                    ))}
+                </div>
             </div>
         </section>
     );
